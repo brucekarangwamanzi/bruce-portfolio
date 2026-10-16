@@ -19,6 +19,7 @@ dist-ssr
 .aws/
 .codex/
 .agents/
+.vercel/
 
 # Editor directories and files
 .vscode/*

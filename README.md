@@ -27,7 +27,22 @@ npm run build
 npm run preview
 ```
 
-## GitHub Pages hosting
+## Vercel hosting
+
+Import `brucekarangwamanzi/bruce-portfolio` into Vercel, with `main` as the production branch and the repository root as the root directory. The tracked `vercel.json` selects Vite, `npm run build`, and the `dist` output directory. Vercel uses the root `/` asset path.
+
+With the Vercel CLI, sign in and deploy from this directory:
+
+```sh
+vercel login
+vercel link --project bruce-portfolio
+vercel git connect
+vercel deploy --prod
+```
+
+Once connected to GitHub, pushes to `main` publish updates automatically.
+
+## GitHub Pages hosting (alternative)
 
 The workflow in `.github/workflows/deploy.yml` builds and deploys the portfolio on every push to `main`. It can also be started from the repository’s Actions tab.
 
