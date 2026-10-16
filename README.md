@@ -26,3 +26,11 @@ The work section links to Bruce’s GitHub. Sample project images, blog posts, a
 npm run build
 npm run preview
 ```
+
+## GitHub Pages hosting
+
+The workflow in `.github/workflows/deploy.yml` builds and deploys the portfolio on every push to `main`. It can also be started from the repository’s Actions tab.
+
+Enable GitHub Pages under **Settings → Pages**, with **GitHub Actions** as the deployment source. The repository must be public on GitHub Free; private repositories require a supported paid GitHub plan.
+
+The expected address for this repository is https://brucekarangwamanzi.github.io/bruce-portfolio/. The workflow gets the base path from GitHub Pages so images, scripts, styles, and the favicon load correctly under the repository path.
