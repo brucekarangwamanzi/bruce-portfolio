@@ -1,0 +1,6 @@
+.work_wrapper { margin: 5% 12%; padding: 40px; display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: 40px; border: 1px solid #684399; border-radius: 24px; background: linear-gradient(120deg, #291648, #150c23); color: #d9d3e5; }
+.work_wrapper h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.2; margin-bottom: 20px; }
+.links { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; justify-self: center; }
+.contactLink { color: #d4bcff; }
+.contactLink:hover { color: #fff; }
+@media (max-width: 900px) { .work_wrapper { margin: 32px 7%; padding: 28px; grid-template-columns: 1fr; gap: 28px; } .links { justify-self: start; } }

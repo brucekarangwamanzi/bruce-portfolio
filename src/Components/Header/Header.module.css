@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+  padding: 6% 12% 7%;
+  position: relative;
+}
+.content { flex: 1; min-width: 0; color: #fff; }
+.content h2 { font-size: clamp(1.25rem, 2vw, 1.8rem); font-weight: 500; margin-bottom: 20px; }
+.content h1 { font-size: clamp(2.3rem, 4vw, 4.5rem); line-height: 1.12; letter-spacing: -.035em; }
+.content h1 span { display: block; color: #bb94ff; }
+.bio { color: #d9d3e5; font-size: 1rem; line-height: 1.85; margin: 24px 0 30px; max-width: 620px; }
+.home_btns { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; }
+.social { display: flex; gap: 20px; flex-wrap: wrap; }
+.social a { color: #ded3ee; font-size: .9rem; padding: 8px 0; }
+.social a:hover { color: #bb94ff; }
+@media (max-width: 1024px) {
+  .hero { flex-direction: column; padding: 48px 7%; align-items: flex-start; }
+}

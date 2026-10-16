@@ -1,0 +1,17 @@
+.about {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 64px;
+  padding: 5% 12%;
+  color: #d9d3e5;
+}
+
+.about h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.2; margin-bottom: 24px; }
+.about p + p { margin-top: 16px; }
+.facts { padding: 28px; border: 1px solid #493064; border-radius: 24px; background: #190e2d; }
+.facts div + div { margin-top: 24px; padding-top: 24px; border-top: 1px solid #493064; }
+.facts dt { color: #bc9aff; font-size: .85rem; margin-bottom: 6px; }
+.facts dd { color: #fff; font-weight: 500; }
+
+@media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 28px; padding: 48px 7%; } }

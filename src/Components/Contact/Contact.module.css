@@ -1,0 +1,17 @@
+.contact_wrapper { display: grid; grid-template-columns: 1.3fr 1fr; align-items: center; padding: 5% 12% 7%; gap: 64px; color: #d9d3e5; }
+.form { display: flex; flex-direction: column; padding: 36px; border: 1px solid #493064; border-radius: 24px; background: #190e2d; min-width: 0; }
+.form h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.2; margin-bottom: 20px; }
+.form > p:not(:first-child) { margin-bottom: 24px; font-size: .9rem; }
+.form label { margin: 14px 0 8px; color: #eee5fc; font-size: .85rem; }
+.form input, .form textarea, .form select { width: 100%; min-width: 0; padding: 12px; border: 1px solid #5a456b; border-radius: 8px; color: #fff; background: #0f0715; font: inherit; font-size: .9rem; }
+.form textarea { resize: vertical; min-height: 140px; }
+.form button { align-self: flex-start; width: auto; height: auto; padding: 14px 24px; margin-top: 24px; }
+.details { min-width: 0; }
+.details h3 { font-size: 1.6rem; color: #fff; margin-bottom: 32px; }
+.details dl { display: grid; gap: 28px; }
+.details dt { font-size: .85rem; color: #bc9aff; margin-bottom: 6px; }
+.details dd { color: #fff; overflow-wrap: anywhere; }
+.details a { color: inherit; }
+.details a:hover { color: #bc9aff; }
+@media (max-width: 1000px) { .contact_wrapper { grid-template-columns: 1fr; gap: 40px; padding: 48px 7%; } .details dl { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .form { padding: 24px; } .details dl { grid-template-columns: 1fr; } }

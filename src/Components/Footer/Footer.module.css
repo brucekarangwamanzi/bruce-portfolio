@@ -1,0 +1,5 @@
+.footer_wrapper { display: flex; flex-direction: column; align-items: center; padding: 48px 7%; border-top: 1px solid #493064; gap: 20px; text-align: center; color: #d9d3e5; }
+.footer_wrapper ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 24px; }
+.footer_wrapper a { color: #fff; }
+.footer_wrapper a:hover { color: #bb94ff; }
+.copyright { font-size: .85rem; color: #bc9aff; }
