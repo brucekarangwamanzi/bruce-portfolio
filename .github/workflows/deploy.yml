@@ -53,3 +53,7 @@ jobs:
       - name: Publish portfolio
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+      - name: Verify published site
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: curl --fail --silent --show-error --retry 5 --retry-all-errors --retry-delay 10 --max-time 20 "$SITE_URL" --output /dev/null
